@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Sorter: Selection vs Bubble Sort</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Sorter: Selection vs Bubble Sort</h1>
+        <form id="book-form">
+            <label for="book-count">Number of Books:</label>
+            <input type="number" id="book-count" min="1" required>
+            <button type="button" id="generate-fields">Generate Fields</button>
+            <div id="book-titles"></div>
+            <div id="sort-options" style="display:none;">
+                <label for="sort-order">Sort Order:</label>
+                <select id="sort-order">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+                <button type="button" id="sort-books">Sort Books</button>
+            </div>
+        </form>
+        <div class="result-section">
+            <div class="result-box">
+                <h2>Selection Sort</h2>
+                <pre id="selection-result"></pre>
+                <p>Time taken: <span id="selection-time"></span> ms</p>
+                <p>Steps taken: <span id="selection-steps"></span></p>
+
+            </div>
+            <div class="result-box">
+                <h2>Bubble Sort</h2>
+                <pre id="bubble-result"></pre>
+                <p>Time taken: <span id="bubble-time"></span> ms</p>
+                <p>Steps taken: <span id="bubble-steps"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

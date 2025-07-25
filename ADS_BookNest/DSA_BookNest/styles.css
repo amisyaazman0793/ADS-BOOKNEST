@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: #3e2723;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.94);
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #5d4037;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+/* Labels & Inputs */
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    color: #4e342e;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #c5a880;
+    border-radius: 6px;
+    background-color: #fdf6ed;
+    font-size: 15px;
+    font-family: 'Georgia', serif;
+}
+
+/* Buttons */
+button {
+    background-color: #8d6e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+button:hover {
+    background-color: #6d4c41;
+}
+
+/* Result Section */
+.result-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 32px;
+    justify-content: center;
+}
+
+/* Result Boxes */
+.result-box {
+    background: #fffaf1;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    border: 1px solid #dec8aa;
+}
+
+.result-box h2 {
+    text-align: center;
+    color: #5d4037;
+    margin-bottom: 12px;
+    font-family: 'Georgia', serif;
+}
+
+pre {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height: 80px;
+    border: 1px solid #e0cda9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .result-section {
+        flex-direction: column;
+    }
+    .result-box {
+        width: 100%;
+    }
+}
